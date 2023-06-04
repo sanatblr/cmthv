@@ -1,0 +1,18 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="create-blog content">
+    <form action="/cmt/seat/reset" method="POST">
+      <h1>Database status</h1>
+      <p>Number of users: </p>
+      <p>Number of seats reserved: </p>
+      <label for="title">Do you want to reset the database?</label>
+      <button>Yes</button>
+    </form>
+  </div>
+
+</body>
+</html>

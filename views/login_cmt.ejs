@@ -1,0 +1,16 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="create-blog content">
+    <form action="/cmt/login" method="POST">
+      <label for="body">Email Address</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button>Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
