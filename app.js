@@ -86,7 +86,7 @@ app.post('/cmt/login', (req, res) => {
       //res.status(200).json({ token: user.token });
       if (email == "admin@createmytrip.com"){
         res.redirect(`/cmt/seat/reset`);
-        reset();
+        //reset();
       }
       else {
         res.redirect(`/cmt/seat/reserve`);
@@ -112,6 +112,7 @@ app.post('/cmt/seat/reserve', (req, res) => {
     //res.render('seat_reserved', { title: 'seat reserved', seatnumber: seatnumber });
     const cookieValue = req.cookies.email;
     console.log('Cookie Value inside Reserve for email:', cookieValue);
+    reserve(req);
     if (cookieValue == 'admin@createmytrip.com'){
       res.redirect('/cmt/admin_home');
     }

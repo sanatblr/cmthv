@@ -38,7 +38,7 @@ function reserve(req, res) {
             // Handle the error as needed
           });
         res.cookie('cseatnumber', seat.seatnumber, {maxAge: 360000});
-        return seat.seatnumber;
+        //return seat.seatnumber;
       }
     })
     .catch((error) => {
